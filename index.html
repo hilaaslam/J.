@@ -1,0 +1,2000 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>J. Website</title>
+  <link rel="icon" type="image/png" href="images/j.logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <header>
+
+    <!-- alert -->
+    <div class="alert alert-danger alert-dismissible fade show text-center fs-6" role="alert">
+      <strong class="me-3">DELIVERING WORLDWIDE </strong> See details
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fs-6 mt-4">
+      <div class="container-fluid">
+        <!-- WELCOME TO J. -->
+        <a class="navbar-brand fs-5" href="index.html">WELCOME TO J.</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- ul -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- signin -->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="signin.html">SIGN IN</a>
+            </li>
+            <!-- flag modal button -->
+            <li class="nav-item">
+              <button class="nav-link active btn" aria-current="page" type="button" data-bs-toggle="modal"
+                data-bs-target="#flag"><img class="flag" src="images/flag-pak.png" alt=""></button>
+            </li>
+            <!-- TRACKING INFO -->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="tracking.html">TRACKING INFO</a>
+            </li>
+            <!-- CORPORATE INQUIRY -->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="corporate.html">CORPORATE INQUIRY</a>
+            </li>
+            <!-- CREATE AN ACCOUNT -->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">CREATE AN ACCOUNT</a>
+            </li>
+            <!-- dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                PKR
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item fs-6" href="#"><img class="flag ms-4 me-2" src="images/flag-AUD.png" alt="">
+                    AUD</a></li>
+                <li><a class="dropdown-item fs-6" href="#"><img class="flag ms-4 me-2" src="images/flag-GBP.png" alt="">
+                    GBP</a></li>
+                <li><a class="dropdown-item fs-6" href="#"><img class="flag ms-4 me-2" src="images/flag-CAD.png" alt="">
+                    CAD</a></li>
+                <li><a class="dropdown-item fs-6" href="#"><img class="flag ms-4 me-2" src="images/flag-EUR.png" alt="">
+                    EUR</a></li>
+                <li><a class="dropdown-item fs-6" href="#"><img class="flag ms-4 me-2" src="images/flag-INR.png" alt="">
+                    INR</a></li>
+                <li><a class="dropdown-item fs-6" href="#"><img class="flag ms-4 me-2" src="images/flag-JPY.png" alt="">
+                    JPY</a></li>
+                <li><a class="dropdown-item fs-6" href="#"><img class="flag ms-4 me-2" src="images/flag-SAR.png" alt="">
+                    SAR</a></li>
+                <li><a class="dropdown-item fs-6" href="#"><img class="flag ms-4 me-2" src="images/flag-SEK.png" alt="">
+                    SEK</a></li>
+                <li><a class="dropdown-item fs-6" href="#"><img class="flag ms-4 me-2" src="images/flag-CHF.png" alt="">
+                    CHF</a></li>
+                <li><a class="dropdown-item fs-6" href="#"><img class="flag ms-4 me-2" src="images/flag-USD.png" alt="">
+                    USD</a></li>
+                <li><a class="dropdown-item fs-6" href="#"><img class="flag ms-4 me-2" src="images/flag-AED.png" alt="">
+                    AED</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- form -->
+          <form class="d-flex" role="search">
+            <!-- Button trigger offcanvas -->
+            <button class="btn btn-outline-dark border-0" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                class="fa-solid fa-cart-shopping"></i></button>
+            <!-- Button trigger modal -->
+            <button class="btn btn-outline-dark border-0 fs-6" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              type="button">SEARCH</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- flag Modal -->
+    <div class="modal fade" id="flag" tabindex="-1" aria-labelledby="flagLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-3">
+          <div class="modal-header">
+            <h1 class="modal-title fs-2 fw-normal text-uppercase" id="flagLabel">Choose your shipping destination</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body m-5 text-center">
+            <select name="" id="" class="w-100 text-center p-2">
+              <option value="">Pakistan</option>
+              <option value="">Australia</option>
+              <option value="">New Zealand</option>
+              <option value="">Canada</option>
+              <option value="">United Kingdom</option>
+              <option value="">United States</option>
+              <option value="">South Africa</option>
+              <option value="">Rest of the World</option>
+            </select>
+            <button class="btn btn-outline-dark mt-4 w-75 text-center p-1">Continue</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- logo -->
+    <nav class="navbar bg-body-light">
+      <div class="container-fluid d-flex justify-content-center">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/j.logo.png" alt="J." width="46" height="48">
+        </a>
+      </div>
+    </nav>
+
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header bg-dark text-light">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">MY BAG</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body text-center fw-semibold">
+        You have no items in your shopping Bag.
+      </div>
+    </div>
+
+    <!-- Vertically centered modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- search  -->
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-dark" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- nav and tabs -->
+    <ul class="nav nav-tabs d-flex justify-content-center gap-4" id="myTab" role="tablist">
+      <!-- HOME -->
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active text-dark" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+          type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">HOME</button>
+      </li>
+      <!-- WOMEN -->
+      <li class="nav-item" role="presentation">
+        <button class="nav-link text-dark" id="Women-tab" data-bs-toggle="tab" data-bs-target="#Women-tab-pane"
+          type="button" role="tab" aria-controls="Women-tab-pane" aria-selected="false">WOMEN</button>
+      </li>
+      <!-- MEN -->
+      <li class="nav-item" role="presentation">
+        <button class="nav-link text-dark" id="Men-tab" data-bs-toggle="tab" data-bs-target="#Men-tab-pane"
+          type="button" role="tab" aria-controls="Men-tab-pane" aria-selected="false">MEN</button>
+      </li>
+      <!-- GIRLS & BOYS -->
+      <li class="nav-item" role="presentation">
+        <button class="nav-link text-dark" id="Girls-tab" data-bs-toggle="tab" data-bs-target="#Girls-tab-pane"
+          type="button" role="tab" aria-controls="Girls-tab-pane" aria-selected="false">GIRLS & BOYS</button>
+      </li>
+      <!-- FRAGRANCES -->
+      <li class="nav-item" role="presentation">
+        <button class="nav-link text-dark" id="FRAGRANCES-tab" data-bs-toggle="tab"
+          data-bs-target="#FRAGRANCES-tab-pane" type="button" role="tab" aria-controls="FRAGRANCES-tab-pane"
+          aria-selected="false">FRAGRANCES</button>
+      </li>
+      <!-- MAKEUP -->
+      <li class="nav-item" role="presentation">
+        <button class="nav-link text-dark" id="Makeup-tab" data-bs-toggle="tab" data-bs-target="#Makeup-tab-pane"
+          type="button" role="tab" aria-controls="Makeup-tab-pane" aria-selected="false">MAKEUP</button>
+      </li>
+      <!-- SKINCARE -->
+      <li class="nav-item" role="presentation">
+        <button class="nav-link text-dark" id="SKINCARE-tab" data-bs-toggle="tab" data-bs-target="#SKINCARE-tab-pane"
+          type="button" role="tab" aria-controls="SKINCARE-tab-pane" aria-selected="false">SKINCARE</button>
+      </li>
+      <!-- CATALOGUE -->
+      <li class="nav-item" role="presentation">
+        <button class="nav-link text-dark" id="catalouge-tab" data-bs-toggle="tab" data-bs-target="#catalouge-tab-pane"
+          type="button" role="tab" aria-controls="catalouge-tab-pane" aria-selected="false">CATALOGUE</button>
+      </li>
+      <!-- SALE -->
+      <li class="nav-item" role="presentation">
+        <button class="nav-link text-dark" id="sale-tab" data-bs-toggle="tab" data-bs-target="#sale-tab-pane"
+          type="button" role="tab" aria-controls="sale-tab-pane" aria-selected="false">SALE</button>
+      </li>
+    </ul>
+
+  </header>
+
+
+  <main>
+
+    <!-- nav and tabs -->
+    <div class="tab-content" id="myTabContent">
+
+      <!-- home tab -->
+      <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+
+        <!-- carousel -->
+        <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade mt-5" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="#Women-tab-pane" onclick="openTab('Women-tab'); return false;">
+                <img src="images/cr1.png" class="d-block w-100" alt="Click to open WOMEN tab">
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="#Men-tab-pane" onclick="openTab('Men-tab'); return false;">
+                <img src="images/cr2.png" class="d-block w-100" alt="...">
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="summer-collection-25.html">
+                <img src="images/cr3.png" class="d-block w-100" alt="...">
+              </a>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- home-women -->
+        <div class="container-fluid d-flex justify-content-center w-100 h-100 mt-5 p-2">
+
+          <div class="w-50 h-50 me-4">
+            <img src="images/home-w-1.png" alt="" width="100%" height="100%">
+            <button type="button" class="btn btn-outline-dark mt-1">UNSTICHED</button>
+          </div>
+
+          <div class="w-25 h-25">
+            <img src="images/home-w-2.png" alt="" width="100%" height="100%">
+            <button type="button" class="btn btn-outline-dark mt-1 mb-3">KURTI</button>
+            <img src="images/home-w-3.png" alt="" width="100%" height="80%">
+            <button type="button" class="btn btn-outline-dark mt-1">STICHED</button>
+          </div>
+
+        </div>
+
+        <!-- home-men -->
+        <div class="container-fluid d-flex justify-content-center w-100 h-100 mt-5 p-2">
+
+          <div class="w-25 h-25">
+            <img src="images/home-m-1.png" alt="" width="100%" height="80%">
+            <button type="button" class="btn btn-outline-dark mt-1 mb-3">KAMEEZ SHALWAR</button>
+            <img src="images/home-m-2.png" alt="" width="100%" height="80%">
+            <button type="button" class="btn btn-outline-dark mt-1">WAISTCOAT</button>
+          </div>
+
+          <div class="w-50 h-50 ms-4">
+            <img src="images/home-m-3.png" alt="" width="100%" height="100%">
+            <button type="button" class="btn btn-outline-dark mt-1">KURTA</button>
+          </div>
+
+        </div>
+
+        <!-- home-makeup -->
+        <div class="container d-flex justify-content-center align-content-center mt-5 p-4">
+          <a href="#FRAGRANCES-tab-pane" class="m-5 mt-0 mb-0" onclick="openTab('FRAGRANCES-tab'); return false;">
+            <img src="images/home-mk.png" alt="" width="100%">
+          </a>
+        </div>
+
+        <!-- home-groom -->
+        <div class="container-fluid d-flex justify-content-center mt-5 p-4">
+          <img src="images/home-groom.png" alt="" width="85%">
+        </div>
+
+        <!-- girls&boys -->
+        <div class="container mt-5 d-flex flex-wrap justify-content-center align-items-center text-center">
+
+          <!-- Left Section -->
+          <div class="d-flex justify-content-center w-50">
+            <img src="images/teen.png" alt="" class="img-fluid" width="70%" height="100%">
+          </div>
+
+          <!-- Right Section -->
+          <div class="d-flex flex-wrap justify-content-center align-items-center w-50 gap-3">
+            <img src="images/boys teen.png" alt="" width="40%" height="80%">
+            <img src="images/kid girl.png" alt="" width="40%" height="80%">
+            <img src="images/kid boy.png" alt="" width="40%" height="80%">
+          </div>
+
+        </div>
+
+        <!-- home-footwear -->
+        <div class="container-fluid d-flex justify-content-center mt-5 p-4">
+          <img src="images/home-footwear.png" alt="" width="85%">
+        </div>
+
+      </div>
+
+      <!-- women's tab -->
+      <div class="tab-pane fade" id="Women-tab-pane" role="tabpanel" aria-labelledby="Women-tab" tabindex="0">
+
+        <!-- UNSTICHED & STICHED -->
+        <div class="container-fluid d-flex justify-content-center mt-5 p-4">
+          <div class="me-4">
+            <img src="images/women-unstiched.png" alt="" width="100%" height="100%">
+          </div>
+          <div>
+            <img src="images/women-stiched.png" alt="" width="100%" height="100%">
+          </div>
+        </div>
+
+        <!-- PC unstiched -->
+        <div class="container-fluid d-flex justify-content-center text-center mt-3 p-5">
+          <div class="me-4">
+            <img src="images/1pc-w.png" alt="" width="100%" height="100%">
+            <button type="button" class="btn btn-outline-dark mt-1">1PC UNSTICHED</button>
+          </div>
+          <div class="me-4">
+            <img src="images/2pc-w.png" alt="" width="100%" height="100%">
+            <button type="button" class="btn btn-outline-dark mt-1">2PC UNSTICHED</button>
+          </div>
+          <div>
+            <img src="images/3pc-w.png" alt="" width="100%" height="100%">
+            <button type="button" class="btn btn-outline-dark mt-1">3PC UNSTICHED</button>
+          </div>
+        </div>
+
+        <!-- terndy kurtis cards -->
+        <div class="mt-5 p-3">
+
+          <!-- text -->
+          <div>
+            <p class="display-6 fs-5 text-center">TRENDY KURTIS</p>
+            <p class="border border-end border-black"> </p>
+          </div>
+
+          <!-- cards -->
+          <div class="container-fluid p-2">
+            <div class="row justify-content-center text-center gap-4">
+
+              <div class="card p-2" style="width: 18rem;">
+                <img src="images/kurti1-w.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-title fs-6">TURQUOISE LAWN EMBROIDERED KURTI</p>
+                  <p class="card-text fs-6">PKR 6,490.00</p>
+                  <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 18rem;">
+                <img src="images/kurti2-w.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-title fs-6">TURQUOISE PINK LAWN PRINTED KURTI</p>
+                  <p class="card-text fs-6">PKR 4,190.00</p>
+                  <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 18rem;">
+                <img src="images/kurti3-w.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-title fs-6">BEIGE LAWN EMBROIDERED KURTI</p>
+                  <p class="card-text fs-6">PKR 6,490.00</p>
+                  <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 18rem;">
+                <img src="images/kurti4-w.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-title fs-6">PEACH LAWN EMBROIDERED KURTI</p>
+                  <p class="card-text fs-6">PKR 5,890.00</p>
+                  <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Accessories cards -->
+        <div class="mt-5 p-3">
+
+          <!-- text -->
+          <div>
+            <p class="display-6 fs-5 text-center">ACCESSORIES</p>
+            <p class="border border-end border-black"> </p>
+          </div>
+
+          <!-- cards -->
+          <div class="container-fluid p-2">
+            <div class="row justify-content-center text-center gap-4">
+
+              <div class="card p-2" style="width: 18rem;">
+                <img src="images/acc1-w.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-title fs-6">BLUE CAMBRIC TROUSERS</p>
+                  <p class="card-text fs-6">PKR 1,890.00</p>
+                  <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 18rem;">
+                <img src="images/acc2-w.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-title fs-6">TEAL CAMBRIC TROUSERS/p>
+                  <p class="card-text fs-6">PKR 1,890.00</p>
+                  <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 18rem;">
+                <img src="images/acc3-w.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-title fs-6">ORANGE CAMBRIC TROUSERS</p>
+                  <p class="card-text fs-6">PKR 1,890.00</p>
+                  <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 18rem;">
+                <img src="images/acc4-w.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-title fs-6">PINK CAMBRIC TROUSERS</p>
+                  <p class="card-text fs-6">PKR 1,890.00</p>
+                  <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- kurti & stoles -->
+        <div class="container-fluid d-flex justify-content-center text-center mt-5 mb-5 p-4">
+          <div class="me-4">
+            <img src="images/women-kurti.png" alt="" width="100%" height="100%">
+            <button type="button" class="btn btn-outline-dark mt-1">KURTI</button>
+          </div>
+          <div>
+            <img src="images/women-stole.png" alt="" width="100%" height="100%">
+            <button type="button" class="btn btn-outline-dark mt-1">STOLES - SHAWLS</button>
+          </div>
+        </div>
+
+        <!-- Fragrance cards -->
+        <div class="mt-5 p-3">
+
+          <!-- text -->
+          <div>
+            <p class="display-6 fs-5 text-center">FRAGRANCE</p>
+            <p class="border border-end border-black"> </p>
+          </div>
+
+          <!-- cards -->
+          <div class="container-fluid p-2">
+            <div class="row justify-content-center text-center gap-4">
+
+              <div class="card p-2" style="width: 18rem;">
+                <img src="images/fragrance-w1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-title fs-6">J. POUR FEMME</p>
+                  <p class="card-text fs-6">PKR 1,900.00</p>
+                  <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 18rem;">
+                <img src="images/fragrance-w2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-title fs-6">BEAUTIFUL by Shaniera Akram</p>
+                  <p class="card-text fs-6">PKR 6,900.00</p>
+                  <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 18rem;">
+                <img src="images/fragrance-w3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-title fs-6">JANAN POUR FEMME</p>
+                  <p class="card-text fs-6">PKR 6,800.00</p>
+                  <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 18rem;">
+                <img src="images/fragrance-w4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-title fs-6">BREEZE</p>
+                  <p class="card-text fs-6">PKR 4,700.00</p>
+                  <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- women cosmetic -->
+        <div class="container-fluid d-flex justify-content-center h-25 mt-5 p-5">
+          <img src="images/cr3.png" alt="" width="95%" height="25%">
+        </div>
+
+      </div>
+
+      <!-- men's tab -->
+      <div class="tab-pane fade" id="Men-tab-pane" role="tabpanel" aria-labelledby="Men-tab" tabindex="0">
+
+        <!-- kameez & kurta -->
+        <div class="container-fluid d-flex justify-content-center mt-5 p-4">
+          <div class="me-4">
+            <img src="images/men-kameez.png" alt="" width="100%" height="100%">
+          </div>
+          <div>
+            <img src="images/men kurta.png" alt="" width="100%" height="100%">
+          </div>
+        </div>
+
+        <!-- men wears -->
+        <div class="container-fluid d-flex justify-content-center text-center mt-3 p-5">
+          <div class="me-4">
+            <img src="images/men-unstiched.png" alt="" width="100%" height="100%">
+            <button type="button" class="btn btn-outline-dark mt-1">UNSTICHED</button>
+          </div>
+          <div class="me-4">
+            <img src="images/men-footwear.png" alt="" width="100%" height="100%">
+            <button type="button" class="btn btn-outline-dark mt-1">FOOTWEAR</button>
+          </div>
+          <div>
+            <img src="images/men-cap.png" alt="" width="100%" height="100%">
+            <button type="button" class="btn btn-outline-dark mt-1">CAPS</button>
+          </div>
+        </div>
+
+        <!-- Aromatics cards -->
+        <div class="mt-5 p-3">
+
+          <!-- text -->
+          <div>
+            <p class="display-6 fs-5 text-center">AROMATICS</p>
+            <p class="border border-end border-black"> </p>
+          </div>
+
+          <!-- cards -->
+          <div class="container-fluid p-2">
+            <div class="row justify-content-center text-center gap-4">
+
+              <div class="card p-2" style="width: 18rem;">
+                <img src="images/Aromatics-m1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-title fs-6">JANAN TOBACCO</p>
+                  <p class="card-text fs-6">PKR 7,100.00</p>
+                  <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 18rem;">
+                <img src="images/Aromatics-m2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-title fs-6">KHUMAR RED</p>
+                  <p class="card-text fs-6">PKR 5,000.00</p>
+                  <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 18rem;">
+                <img src="images/Aromatics-m3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-title fs-6">JANAN OUD</p>
+                  <p class="card-text fs-6">PKR 2,800.00</p>
+                  <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 18rem;">
+                <img src="images/Aromatics-m4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-title fs-6">KHUMAR</p>
+                  <p class="card-text fs-6">PKR 4,300.00</p>
+                  <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Men's Traditional cards -->
+        <div class="mt-5 p-3">
+
+          <!-- text -->
+          <div>
+            <p class="display-6 fs-5 text-center">MEN'S TRADITIONAL</p>
+            <p class="border border-end border-black"> </p>
+          </div>
+
+          <!-- cards -->
+          <div class="container-fluid p-2">
+            <div class="row justify-content-center text-center gap-4">
+
+              <div class="card p-2" style="width: 18rem;">
+                <img src="images/traditional1-men.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-title fs-6">BLACK COTTON KURTA</p>
+                  <p class="card-text fs-6">PKR 4,490.00</p>
+                  <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 18rem;">
+                <img src="images/traditional2-men.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-title fs-6">APPLE GREEN COTTON KURTA </p>
+                  <p class="card-text fs-6">PKR 4,490.00</p>
+                  <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 18rem;">
+                <img src="images/traditional4-men.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-title fs-6">MAROON COTTON KURTA</p>
+                  <p class="card-text fs-6">PKR 4,490.00</p>
+                  <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 18rem;">
+                <img src="images/traditional3-men.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-title fs-6">DULL BLUE COTTON SHORT KURTA</p>
+                  <p class="card-text fs-6">PKR 4,490.00</p>
+                  <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- sweaters & wedding -->
+        <div class="container-fluid d-flex justify-content-center text-center mt-5 mb-5 p-4">
+          <div class="me-4">
+            <img src="images/men-sweaters.png" alt="" width="100%" height="100%">
+            <button type="button" class="btn btn-outline-dark mt-1">SWEATERS</button>
+          </div>
+          <div>
+            <img src="images/mens-wedding.png" alt="" width="100%" height="100%">
+            <button type="button" class="btn btn-outline-dark mt-1">WEDDING</button>
+          </div>
+        </div>
+
+        <!-- wedding cards -->
+        <div class="mt-5 p-3">
+
+          <!-- text -->
+          <div>
+            <p class="display-6 fs-5 text-center">WEDDING</p>
+            <p class="border border-end border-black"> </p>
+          </div>
+
+          <!-- cards -->
+          <div class="container-fluid p-2">
+            <div class="row justify-content-center text-center gap-4">
+
+              <div class="card p-2" style="width: 18rem;">
+                <img src="images/wed1-m.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-title fs-6">BLACK COTTON SHERWANI</p>
+                  <p class="card-text fs-6">PKR 36,000.00</p>
+                  <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 18rem;">
+                <img src="images/wed2-m.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-title fs-6">GOLD BLENDED SHERWANI/p>
+                  <p class="card-text fs-6">PKR 55,000.00</p>
+                  <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 18rem;">
+                <img src="images/wed3-m.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-title fs-6">RUST BLENDED SHERWANI</p>
+                  <p class="card-text fs-6">PKR 50,000.00
+                  </p>
+                  <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 18rem;">
+                <img src="images/wed4-m.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-title fs-6">GOLD BLENDED SHERWANI</p>
+                  <p class="card-text fs-6">PKR 59,000.00</p>
+                  <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- mens perfume -->
+        <div class="container-fluid d-flex justify-content-center h-25 mt-5 p-5">
+          <img src="images/men-perfume.png" alt="" width="95%" height="25%">
+        </div>
+
+      </div>
+
+      <!-- GIRLS & BOYS -->
+      <div class="tab-pane fade" id="Girls-tab-pane" role="tabpanel" aria-labelledby="Girls-tab" tabindex="0">
+
+        <!-- kids -->
+        <div class="container-fluid d-flex justify-content-center mt-5 mb-5 p-4">
+          <div class="me-4">
+            <img src="images/gb-kid-girl.png" alt="" width="100%" height="100%">
+          </div>
+          <div>
+            <img src="images/gb-kid-boy.png" alt="" width="100%" height="100%">
+          </div>
+        </div>
+
+        <!-- Toddlers cards -->
+        <div class="mt-5 p-3">
+
+          <!-- text -->
+          <div>
+            <p class="display-6 fs-5 text-center">TODDLERS</p>
+            <p class="border border-end border-black"> </p>
+          </div>
+
+          <!-- cards -->
+          <div class="container-fluid p-2">
+            <div class="row justify-content-center text-center gap-4">
+
+              <div class="card p-2" style="width: 18rem;">
+                <img src="images/toddler1-gb.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-title fs-6">MAGENTA BLENDED KAMEEZ SHALWAR</p>
+                  <p class="card-text fs-6">PKR 2,290.00</p>
+                  <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 18rem;">
+                <img src="images/toddler2-gb.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-title fs-6">PINK BLENDED KAMEEZ SHALWAR </p>
+                  <p class="card-text fs-6">PKR 2,290.00</p>
+                  <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 18rem;">
+                <img src="images/toddler3-gb.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-title fs-6">MEHNDI GREEN BLENDED KAMEEZ SHALWAR</p>
+                  <p class="card-text fs-6">PKR 2,390.00</p>
+                  <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 18rem;">
+                <img src="images/toddler4-gb.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-title fs-6">TEAL BLENDED KAMEEZ SHALWAR</p>
+                  <p class="card-text fs-6">PKR 2,390.00</p>
+                  <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- teens -->
+        <div class="container-fluid d-flex justify-content-center mt-5 mb-5 p-4">
+          <div class="me-4">
+            <img src="images/gb-teen-boy.png" alt="" width="100%" height="100%">
+          </div>
+          <div>
+            <img src="images/gb-teen-girl.png" alt="" width="100%" height="100%">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- FRAGRANCES -->
+      <div class="tab-pane fade" id="FRAGRANCES-tab-pane" role="tabpanel" aria-labelledby="FRAGRANCES-tab" tabindex="0">
+
+        <!-- cards row1 -->
+        <div class="container-fluid">
+          <div class="row justify-content-center text-center m-2 mt-5 p-1 gap-3">
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/fragrance-1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">JANAN GOLD</p>
+                <p class="card-text fs-6">PKR 2,400.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/fragrance-2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">CLASSIQUE POUR FEMME</p>
+                <p class="card-text fs-6">PKR 6,700.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/fragrance-3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">EDGE</p>
+                <p class="card-text fs-6">PKR 5,800.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/fragrance-4.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">ESSENCE</p>
+                <p class="card-text fs-6">PKR 5,000.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- cards row2 -->
+        <div class="container-fluid">
+          <div class="row justify-content-center text-center m-2 mt-5 p-1 gap-3">
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/fragrance-5.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">IMPERIAL OUD</p>
+                <p class="card-text fs-6">PKR 5,900.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/fragrance-6.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">BEAUTIFUL by Shaniera Akram</p>
+                <p class="card-text fs-6">PKR 6,900.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/fragrance-7.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">SMASH | SANIA MIRZA</p>
+                <p class="card-text fs-6">PKR 7,700.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/fragrance-8.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">VOCAL</p>
+                <p class="card-text fs-6">PKR 7,000.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- cards row3 -->
+        <div class="container-fluid">
+          <div class="row justify-content-center text-center m-2 mt-5 p-1 gap-3">
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/fragrance-9.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">OUDH QADIM</p>
+                <p class="card-text fs-6">PKR 5,000.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/fragrance-10.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">FANTASY | HIRA MANI</p>
+                <p class="card-text fs-6">PKR 7,400.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/fragrance-11.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">AAPA'S AROMA</p>
+                <p class="card-text fs-6">PKR 4,400.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/fragrance-12.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">ATTAR-E-ZAYAN</p>
+                <p class="card-text fs-6">PKR 8,200.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- cards row4 -->
+        <div class="container-fluid">
+          <div class="row justify-content-center text-center m-2 mt-5 p-1 gap-3">
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/fragrance-13.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">UROOSA</p>
+                <p class="card-text fs-6">PKR 3,000.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/fragrance-14.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">WASIM AKRAM 414</p>
+                <p class="card-text fs-6">PKR 5,300.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/fragrance-15.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">BELLA Pour Femme</p>
+                <p class="card-text fs-6">PKR 6,600.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/fragrance-16.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">KHUMAR RED</p>
+                <p class="card-text fs-6">PKR 2,400.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- cards row5 -->
+        <div class="container-fluid">
+          <div class="row justify-content-center text-center m-2 mt-5 p-1 gap-3">
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/fragrance-17.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">GREAT SUMMIT</p>
+                <p class="card-text fs-6">PKR 5,100.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/fragrance-18.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">DARK STAR</p>
+                <p class="card-text fs-6">PKR 5,500.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/fragrance-19.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">BLOOM</p>
+                <p class="card-text fs-6">PKR 1,900.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/fragrance-20.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">LILIANE Pour Femme</p>
+                <p class="card-text fs-6">PKR 2,100.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- MAKEUP -->
+      <div class="tab-pane fade" id="Makeup-tab-pane" role="tabpanel" aria-labelledby="Makeup-tab" tabindex="0">
+
+        <!-- cosmeticVideo -->
+        <div>
+          <video class="mt-5" id="cosmeticVideo" height="auto;" width="100%;" autoplay="" muted="" loop=""
+            playsinline="">
+            <source id="cosmeticVideoSource" src="images/cosmetic_video_web.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- face & lips -->
+        <div class="container-fluid d-flex justify-content-center text-center mt-5 p-4 pt-0">
+
+          <div class="me-4">
+            <div class="mt-5">
+              <p class="fs-4">FACE</p>
+              <img src="images/makeup-face_section.png" alt="" width="100%" height="100%">
+              <button type="button" class="btn btn-outline-dark mt-2">SHOP NOW</button>
+            </div>
+
+          </div>
+          <div>
+            <div class="mt-5">
+              <p class="fs-4">LIPS</p>
+              <img src="images/makeup-lips_section.png" alt="" width="100%" height="100%">
+              <button type="button" class="btn btn-outline-dark mt-2">SHOP NOW</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- eyes & Makeup Accessories -->
+        <div class="container-fluid d-flex justify-content-center text-center p-4 pt-0">
+
+          <div class="me-4">
+            <div class="mt-5">
+              <p class="fs-4">EYES</p>
+              <img src="images/makeup-eyes_section_1.png" alt="" width="100%" height="100%">
+              <button type="button" class="btn btn-outline-dark mt-2">SHOP NOW</button>
+            </div>
+          </div>
+
+          <div>
+            <div class="mt-5">
+              <p class="fs-4">MAKEUP ACCESSORIES</p>
+              <img src="images/makeup-makup_section.png" alt="" width="100%" height="100%">
+              <button type="button" class="btn btn-outline-dark mt-2">SHOP NOW</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- SKINCARE -->
+      <div class="tab-pane fade" id="SKINCARE-tab-pane" role="tabpanel" aria-labelledby="SKINCARE-tab" tabindex="0">
+
+        <!-- cards row1 -->
+        <div class="container-fluid">
+          <div class="row justify-content-center text-center m-2 mt-5 p-1 gap-3">
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/skincare-2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">LA PROTECTION SUN PROTECTION CREAM</p>
+                <p class="card-text fs-6">PKR 4,500.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/skincare-3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">LA PERFECTION HYDRATING SERUM</p>
+                <p class="card-text fs-6">PKR 3,500.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/skincare-4.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">LA REGENERATION BEAUTY CREAM</p>
+                <p class="card-text fs-6">PKR 4,500.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/skincare-5.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">LA SEDUCTION ANTI AGING SERUM</p>
+                <p class="card-text fs-6">PKR 3,500.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- cards row2 -->
+        <div class="container-fluid">
+          <div class="row justify-content-center text-center m-2 mt-5 p-1 gap-3">
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/skincare-1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">LA LUMIERE RADIANCE TONER</p>
+                <p class="card-text fs-6">PKR 4,800.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/skincare-6.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">INTENSE CARE HAND CREAM</p>
+                <p class="card-text fs-6">PKR 1,700.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/skincare-7.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">INTENSE CARE FOOT CREAM</p>
+                <p class="card-text fs-6">PKR 2,300.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/skincare-8.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">SOOTHING TWILIGHT</p>
+                <p class="card-text fs-6">PKR 1,200.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- cards row3 -->
+        <div class="container-fluid">
+          <div class="row justify-content-center text-center m-2 mt-5 p-1 gap-5">
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/skincare-9.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">WILD SPIRIT</p>
+                <p class="card-text fs-6">PKR 1,200.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/skincare-10.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">TROPICAL BLISS</p>
+                <p class="card-text fs-6">PKR 1,200.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/skincare-11.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">SHIMMERING WATERFALL</p>
+                <p class="card-text fs-6">PKR 1,200.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- catalouge -->
+      <div class="tab-pane fade" id="catalouge-tab-pane" role="tabpanel" aria-labelledby="catalouge-tab" tabindex="0">
+
+        <!-- catalouge row1 -->
+        <div class="container-fluid d-flex justify-content-center text-center mt-3 p-5">
+
+          <div class="me-4">
+            <img src="images/catalouge-img-new1.png" alt="" width="100%" height="100%">
+            <p class="fs-5 mt-1">J. Mystique Manor Collection '25</p>
+          </div>
+
+          <div class="me-4">
+            <img src="images/catalouge-img-new2.png" alt="" width="100%" height="100%">
+            <p class="fs-5 mt-1">J. Mystique Manor Collection '25</p>
+          </div>
+
+          <div>
+            <img src="images/catalouge-img1.png" alt="" width="100%" height="100%">
+            <p class="fs-5 mt-1">J. Teens Girls Collection'25</p>
+          </div>
+
+        </div>
+
+        <!-- catalouge row2 -->
+        <div class="container-fluid d-flex justify-content-center text-center mt-3 p-5">
+
+          <div class="me-4">
+            <img src="images/catalouge-img2.png" alt="" width="100%" height="100%">
+            <p class="fs-5 mt-1">J. Teens Summer Collection'25</p>
+          </div>
+
+          <div class="me-4">
+            <img src="images/catalouge-img3.png" alt="" width="100%" height="100%">
+            <p class="fs-5 mt-1">J. Shades Of Summer Collection '25</p>
+          </div>
+
+          <div>
+            <img src="images/catalouge-img4.png" alt="" width="100%" height="100%">
+            <p class="fs-5 mt-1">J. Men's Summer Collection'25</p>
+          </div>
+
+        </div>
+
+        <!-- catalouge row3 -->
+        <div class="container-fluid d-flex justify-content-center text-center mt-3 p-5">
+
+          <div class="me-4">
+            <img src="images/catalouge-img5.png" alt="" width="100%" height="100%">
+            <p class="fs-5 mt-1">J. Summer Trip Collection'25</p>
+          </div>
+
+          <div class="me-4">
+            <img src="images/catalouge-img6.png" alt="" width="100%" height="100%">
+            <p class="fs-5 mt-1">J. Like Father Son Winter Collection'24</p>
+          </div>
+
+          <div>
+            <img src="images/catalouge-img7.png" alt="" width="100%" height="100%">
+            <p class="fs-5 mt-1">C&C Men's Collection</p>
+          </div>
+
+        </div>
+
+        <!-- catalouge row4 -->
+        <div class="container-fluid d-flex justify-content-center text-center mt-3 p-5">
+
+          <div class="me-4">
+            <img src="images/catalouge-img8.png" alt="" width="100%" height="100%">
+            <p class="fs-5 mt-1">J. Rasm-e-Dholki'24</p>
+          </div>
+
+          <div class="me-4">
+            <img src="images/catalouge-img9.png" alt="" width="100%" height="100%">
+            <p class="fs-5 mt-1">J. Naerang - Handwoven'24</p>
+          </div>
+
+          <div>
+            <img src="images/catalouge-img10.png" alt="" width="100%" height="100%">
+            <p class="fs-5 mt-1">J. Brunch Edit'24</p>
+          </div>
+
+        </div>
+
+        <!-- catalouge row5 -->
+        <div class="container-fluid d-flex justify-content-center text-center mt-3 p-5">
+
+          <div class="me-4">
+            <img src="images/catalouge-img11.png" alt="" width="100%" height="100%">
+            <p class="fs-5 mt-1">J. Vibe Tribe - Teen's'24</p>
+          </div>
+
+          <div class="me-4">
+            <img src="images/catalouge-img12.png" alt="" width="100%" height="100%">
+            <p class="fs-5 mt-1">J. Teens Winter'24</p>
+          </div>
+
+          <div>
+            <img src="images/catalouge-img13.png" alt="" width="100%" height="100%">
+            <p class="fs-5 mt-1">J. Qubool Hai - Wedding Festive'24</p>
+          </div>
+
+        </div>
+
+        <!-- catalouge row6 -->
+        <div class="container-fluid d-flex justify-content-center text-center mt-3 p-5">
+
+          <div class="me-4">
+            <img src="images/catalouge-img14.png" alt="" width="100%" height="100%">
+            <p class="fs-5 mt-1">J. Men Winter'24</p>
+          </div>
+
+          <div class="me-4">
+            <img src="images/catalouge-img15.png" alt="" width="100%" height="100%">
+            <p class="fs-5 mt-1">J. Men Winter New Drop'24</p>
+          </div>
+
+          <div>
+            <img src="images/catalouge-img16.png" alt="" width="100%" height="100%">
+            <p class="fs-5 mt-1">J. Formals '24</p>
+          </div>
+
+        </div>
+
+        <!-- catalouge row7 -->
+        <div class="container-fluid d-flex justify-content-center text-center mt-3 p-5">
+
+          <div class="me-4">
+            <img src="images/catalouge-img17.png" alt="" width="100%" height="100%">
+            <p class="fs-5 mt-1">J. Tales Of Winter '24</p>
+          </div>
+
+          <div class="me-4">
+            <img src="images/catalouge-img18.png" alt="" width="100%" height="100%">
+            <p class="fs-5 mt-1">J. Teen Boys Midsummer '24</p>
+          </div>
+
+          <div>
+            <img src="images/catalouge-img19.png" alt="" width="100%" height="100%">
+            <p class="fs-5 mt-1">J. Infants Midsummer '24</p>
+          </div>
+
+        </div>
+
+        <!-- catalouge row8 -->
+        <div class="container-fluid d-flex justify-content-center text-center mt-3 p-5">
+
+          <div class="me-4">
+            <img src="images/catalouge-img20.png" alt="" width="100%" height="100%">
+            <p class="fs-5 mt-1">J. Men Midsummer '24</p>
+          </div>
+
+          <div class="me-4">
+            <img src="images/catalouge-img21.png" alt="" width="100%" height="100%">
+            <p class="fs-5 mt-1">J. Junior Midsummer '24</p>
+          </div>
+
+          <div>
+            <img src="images/catalouge-img22.png" alt="" width="100%" height="100%">
+            <p class="fs-5 mt-1">J. Shadi Mubarak Grooms '24</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- sale -->
+      <div class="tab-pane fade" id="sale-tab-pane" role="tabpanel" aria-labelledby="sale-tab" tabindex="0">
+
+        <!-- cards row1 -->
+        <div class="container-fluid">
+          <div class="row justify-content-center text-center m-2 mt-5 p-1 gap-3">
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/sale-1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">MULTICOLOR PALACHI UNSTITCHED 3PC</p>
+                <p class="card-text fs-6">
+                  <strong class="bg-danger p-1 text-light fw-normal">40% OFF</strong>
+                  <strong class="text-danger"> PKR 6,594.00</strong>
+                </p>
+                <p class="card-text fs-6 text-decoration-line-through">PKR 10,990.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/sale-2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">GREEN JACQUARD DYED UNSTITCHED 2PC</p>
+                <p class="card-text fs-6">
+                  <strong class="bg-danger p-1 text-light fw-normal">40% OFF</strong>
+                  <strong class="text-danger"> PKR 2,994.00</strong>
+                </p>
+                <p class="card-text fs-6 text-decoration-line-through">PKR 4,990.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/sale-3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">BLUE PALACHI UNSTITCHED 3PC</p>
+                <br>
+                <p class="card-text fs-6">
+                  <strong class="bg-danger p-1 text-light fw-normal">40% OFF</strong>
+                  <strong class="text-danger"> PKR 6,594.00</strong>
+                </p>
+                <p class="card-text fs-6 text-decoration-line-through">PKR 10,990.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/sale-4.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">GREEN KHADDAR PRINTED UNSTITCHED 3PC</p>
+                <p class="card-text fs-6">
+                  <strong class="bg-danger p-1 text-light fw-normal">40% OFF</strong>
+                  <strong class="text-danger"> PKR 2,934.00</strong>
+                </p>
+                <p class="card-text fs-6 text-decoration-line-through">PKR 4,890.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- cards row2 -->
+        <div class="container-fluid">
+          <div class="row justify-content-center text-center m-2 mt-5 p-1 gap-3">
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/sale-5.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">OFF WHITE JACQUARD EMBROIDERED 3PC STITCHED</p>
+                <p class="card-text fs-6">
+                  <strong class="bg-danger p-1 text-light fw-normal">30% OFF</strong>
+                  <strong class="text-danger"> PKR 10,143.00</strong>
+                </p>
+                <p class="card-text fs-6 text-decoration-line-through">PKR 14,490.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/sale-6.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">GREEN LINEN PRINTED 3PC STITCHED</p>
+                <p class="card-text fs-6">
+                  <strong class="bg-danger p-1 text-light fw-normal">30% OFF</strong>
+                  <strong class="text-danger"> PKR 5,803.00</strong>
+                </p>
+                <p class="card-text fs-6 text-decoration-line-through">PKR 8,290.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/sale-7.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">BEIGE KHADDAR 2PC STITCHED</p>
+                <br>
+                <p class="card-text fs-6">
+                  <strong class="bg-danger p-1 text-light fw-normal">30% OFF</strong>
+                  <strong class="text-danger"> PKR 3,633.00</strong>
+                </p>
+                <p class="card-text fs-6 text-decoration-line-through">PKR 5,190.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/sale-8.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">BLACK KHADDAR PRINTED 3PC STITCHED</p>
+                <p class="card-text fs-6">
+                  <strong class="bg-danger p-1 text-light fw-normal">30% OFF</strong>
+                  <strong class="text-danger"> PKR 4,893.00</strong>
+                </p>
+                <p class="card-text fs-6 text-decoration-line-through"> PKR 6,990.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- cards row3 -->
+        <div class="container-fluid">
+          <div class="row justify-content-center text-center m-2 mt-5 p-1 gap-3">
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/sale-9.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">YELLOW KHADDAR PRINTED KURTI</p>
+                <p class="card-text fs-6">
+                  <strong class="bg-danger p-1 text-light fw-normal">40% OFF</strong>
+                  <strong class="text-danger"> PKR 2,154.00</strong>
+                </p>
+                <p class="card-text fs-6 text-decoration-line-through">PKR 3,590.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/sale-10.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">BLACK TEXTURED EMBROIDERED KURTI</p>
+                <p class="card-text fs-6">
+                  <strong class="bg-danger p-1 text-light fw-normal">40% OFF</strong>
+                  <strong class="text-danger"> PKR 3,774.00</strong>
+                </p>
+                <p class="card-text fs-6 text-decoration-line-through">PKR 6,290.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/sale-11.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">YELLOW TEXTURED EMBROIDERED KURTI</p>
+                <p class="card-text fs-6">
+                  <strong class="bg-danger p-1 text-light fw-normal">40% OFF</strong>
+                  <strong class="text-danger"> PKR 3,774.00</strong>
+                </p>
+                <p class="card-text fs-6 text-decoration-line-through">PKR 6,290.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/sale-12.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">BLACK KHADDI YARN DYED KURTI</p>
+                <p class="card-text fs-6">
+                  <strong class="bg-danger p-1 text-light fw-normal">40% OFF</strong>
+                  <strong class="text-danger"> PKR 2,934.00</strong>
+                </p>
+                <p class="card-text fs-6 text-decoration-line-through"> PKR 4,890.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- cards row4 -->
+        <div class="container-fluid">
+          <div class="row justify-content-center text-center m-2 mt-5 p-1 gap-3">
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/sale-13.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">DARK MAROON BLENDED KAMEEZ SHALWAR</p>
+                <p class="card-text fs-6">
+                  <strong class="bg-danger p-1 text-light fw-normal">40% OFF</strong>
+                  <strong class="text-danger"> PKR 5,394.00</strong>
+                </p>
+                <p class="card-text fs-6 text-decoration-line-through"> PKR 8,990.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/sale-14.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">PEBBLE GREY BLENDED KAMEEZ SHALWAR</p>
+                <p class="card-text fs-6">
+                  <strong class="bg-danger p-1 text-light fw-normal">40% OFF</strong>
+                  <strong class="text-danger"> PKR 5,094.00</strong>
+                </p>
+                <p class="card-text fs-6 text-decoration-line-through"> PKR 8,490.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/sale-15.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">NAVY BLUE BLENDED KAMEEZ SHALWAR</p>
+                <p class="card-text fs-6">
+                  <strong class="bg-danger p-1 text-light fw-normal">40% OFF</strong>
+                  <strong class="text-danger"> PKR 5,094.00</strong>
+                </p>
+                <p class="card-text fs-6 text-decoration-line-through"> PKR 8,490.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/sale-16.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">DARK GREY BLENDED KAMEEZ SHALWAR</p>
+                <p class="card-text fs-6">
+                  <strong class="bg-danger p-1 text-light fw-normal">40% OFF</strong>
+                  <strong class="text-danger"> PKR 5,694.00</strong>
+                </p>
+                <p class="card-text fs-6 text-decoration-line-through"> PKR 9,490.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- cards row5 -->
+        <div class="container-fluid">
+          <div class="row justify-content-center text-center m-2 mt-5 p-1 gap-3">
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/sale-17.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">BROWN BLENDED KURTA TROUSER</p>
+                <p class="card-text fs-6">
+                  <strong class="bg-danger p-1 text-light fw-normal">40% OFF</strong>
+                  <strong class="text-danger"> PKR 5,694.00</strong>
+                </p>
+                <p class="card-text fs-6 text-decoration-line-through"> PKR 9,490.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/sale-18.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">OFF WHITE WOOL MEN SHAWL</p>
+                <br>
+                <p class="card-text fs-6">
+                  <strong class="bg-danger p-1 text-light fw-normal">20% OFF</strong>
+                  <strong class="text-danger"> PKR 8,792.00</strong>
+                </p>
+                <p class="card-text fs-6 text-decoration-line-through"> PKR 410,990.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/sale-19.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">FAWN WOOL MEN SHAWL</p>
+                <br>
+                <p class="card-text fs-6">
+                  <strong class="bg-danger p-1 text-light fw-normal">20% OFF</strong>
+                  <strong class="text-danger"> PKR 8,792.00</strong>
+                </p>
+                <p class="card-text fs-6 text-decoration-line-through"> PKR 10,990.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/sale-20.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">WHITE COTTON KURTA</p>
+                <br>
+                <p class="card-text fs-6">
+                  <strong class="bg-danger p-1 text-light fw-normal">40% OFF</strong>
+                  <strong class="text-danger"> PKR 2,994.00</strong>
+                </p>
+                <p class="card-text fs-6 text-decoration-line-through"> PKR 4,990.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- cards row6 -->
+        <div class="container-fluid">
+          <div class="row justify-content-center text-center m-2 mt-5 p-1 gap-3">
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/sale-21.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">MAROON COTTON SHORT KURTA</p>
+                <p class="card-text fs-6">
+                  <strong class="bg-danger p-1 text-light fw-normal">40% OFF</strong>
+                  <strong class="text-danger"> PKR 2,574.00</strong>
+                </p>
+                <p class="card-text fs-6 text-decoration-line-through"> PKR 4,290.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/sale-22.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">BEIGE COTTON SHORT KURTA</p>
+                <br>
+                <p class="card-text fs-6">
+                  <strong class="bg-danger p-1 text-light fw-normal">40% OFF</strong>
+                  <strong class="text-danger"> PKR 2,694.00</strong>
+                </p>
+                <p class="card-text fs-6 text-decoration-line-through"> PKR 4,490.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/sale-23.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">BLACK COTTON KURTA</p>
+                <br>
+                <p class="card-text fs-6">
+                  <strong class="bg-danger p-1 text-light fw-normal">40% OFF</strong>
+                  <strong class="text-danger"> PKR 2,694.00</strong>
+                </p>
+                <p class="card-text fs-6 text-decoration-line-through"> PKR 4,490.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/sale-24.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">OFF WHITE COTTON SHORT KURTA</p>
+                <p class="card-text fs-6">
+                  <strong class="bg-danger p-1 text-light fw-normal">40% OFF</strong>
+                  <strong class="text-danger"> PKR 2,694.00</strong>
+                </p>
+                <p class="card-text fs-6 text-decoration-line-through"> PKR 4,490.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- cards row7 -->
+        <div class="container-fluid">
+          <div class="row justify-content-center text-center m-2 mt-5 p-1 gap-3">
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/sale-25.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">OCHRE KHADDAR PRINTED KURTI</p>
+                <p class="card-text fs-6">
+                  <strong class="bg-danger p-1 text-light fw-normal">30% OFF</strong>
+                  <strong class="text-danger"> PKR 4,543.00</strong>
+                </p>
+                <p class="card-text fs-6 text-decoration-line-through"> PKR 6,490.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/sale-26.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">RED TEXTURED EMBROIDERED 3PC STITCHED</p>
+                <p class="card-text fs-6">
+                  <strong class="bg-danger p-1 text-light fw-normal">30% OFF</strong>
+                  <strong class="text-danger"> PKR 9,093.00</strong>
+                </p>
+                <p class="card-text fs-6 text-decoration-line-through"> PKR 12,990.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/sale-27.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">YELLOW KHADDAR EMBROIDERED 2PC STITCHED</p>
+                <p class="card-text fs-6">
+                  <strong class="bg-danger p-1 text-light fw-normal">40% OFF</strong>
+                  <strong class="text-danger"> PKR 4,193.00</strong>
+                </p>
+                <p class="card-text fs-6 text-decoration-line-through"> PKR 5,990.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/sale-28.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">LILAC KHADDAR EMBROIDERED KURTI</p>
+                <p class="card-text fs-6">
+                  <strong class="bg-danger p-1 text-light fw-normal">30% OFF</strong>
+                  <strong class="text-danger"> PKR 4,193.00</strong>
+                </p>
+                <p class="card-text fs-6 text-decoration-line-through"> PKR 5,990.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- cards row8 -->
+        <div class="container-fluid">
+          <div class="row justify-content-center text-center m-2 mt-5 p-1 gap-3">
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/sale-29.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">OFF WHITE KHADDAR EMBROIDERED KURTI</p>
+                <p class="card-text fs-6">
+                  <strong class="bg-danger p-1 text-light fw-normal">30% OFF</strong>
+                  <strong class="text-danger"> PKR 1,883.00</strong>
+                </p>
+                <p class="card-text fs-6 text-decoration-line-through"> PKR 2,690.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/sale-30.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">PINK KHADDAR PRINTED 2PC STITCHED</p>
+                <p class="card-text fs-6">
+                  <strong class="bg-danger p-1 text-light fw-normal">30% OFF</strong>
+                  <strong class="text-danger"> PKR 3,073.00</strong>
+                </p>
+                <p class="card-text fs-6 text-decoration-line-through"> PKR 43890.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/sale-31.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">OFF WHITE JACQUARD YARN DYED 3PC STITCHED</p>
+                <p class="card-text fs-6">
+                  <strong class="bg-danger p-1 text-light fw-normal">30% OFF</strong>
+                  <strong class="text-danger"> PKR 3,843.00</strong>
+                </p>
+                <p class="card-text fs-6 text-decoration-line-through"> PKR 5,490.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+            <div class="card p-2" style="width: 18rem;">
+              <img src="images/sale-32.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title fs-6">PINK ORGANZA PRINTED 3PC STITCHED</p>
+                <p class="card-text fs-6">
+                  <strong class="bg-danger p-1 text-light fw-normal">40% OFF</strong>
+                  <strong class="text-danger"> PKR 2,454.00</strong>
+                </p>
+                <p class="card-text fs-6 text-decoration-line-through"> PKR 4,090.00</p>
+                <a href="#" class="btn btn-outline-dark">ADD TO BAG</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <footer class="m-5">
+
+    <!-- black box -->
+    <div class="container-fluid d-flex justify-content-center text-center bg-dark text-light p-4">
+      <div>
+        <h3>BE THE FIRST</h3>
+        <p>New arrivals. Exclusive previews. <br>
+          First access to sales. <br>
+          Sign up to stay in the know.</p>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" aria-label="Text input with dropdown button">
+          <button class="btn btn-outline-secondary" type="button">SIGN UP</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- white box -->
+    <div class="d-flex justify-content-around bg-body-tertiary list-unstyled p-4 mt-4">
+
+      <div>
+        <h1 class="fs-4">NEED HELP</h1>
+        <br>
+        <p>+92 21 111 112 111 (9am - 10pm , Mon - Sat)</p>
+        <a class="text-dark text-decoration-none" href="eshop@junaidjamshed.com">eshop@junaidjamshed.com</a>
+      </div>
+
+      <div>
+        <h2 class="fs-4">CUSTOMER SERVICE</h2>
+        <br>
+        <a class="text-dark text-decoration-none" href="contact.html">
+          <li>Contact us</li>
+        </a>
+        <li>Delivery & Orders</li>
+        <li>Returns & Exchanges</li>
+        <li>Terms & Conditions</li>
+        <li>Privacy Policy</li>
+        <li>Track My Order</li>
+        <li>Payment Guide</li>
+      </div>
+
+      <div>
+        <h1 class="fs-4">COMPANY</h1>
+        <br>
+        <a class="text-dark text-decoration-none" href="contact.html">
+          <li>About us</li>
+        </a>
+        <li> Careers</li>
+        <li>Store Addresses</li>
+      </div>
+
+      <div>
+        <h1 class="fs-4">FOLLLOW US</h1>
+        <br>
+
+        <div class="fs-4">
+          <i class="fa-brands fa-square-instagram text-danger"></i>
+          <i class="fa-brands fa-facebook text-primary-emphasis"></i>
+          <i class="fa-brands fa-youtube text-danger"></i>
+          <i class="fa-brands fa-linkedin-in text-primary"></i>
+        </div>
+        <div class="fs-4">
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-pinterest-p text-danger"></i>
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <!-- javascript -->
+  <script>
+
+    function openTab(tabId) {
+      var tab = new bootstrap.Tab(document.getElementById(tabId));
+      tab.show();
+
+      document.getElementById(tabId + '-pane').scrollIntoView({ behavior: 'smooth' });
+    }
+
+  </script>
+
+</body>
+
+</html>
